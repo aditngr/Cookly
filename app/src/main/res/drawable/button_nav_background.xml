@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna saat ditekan -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FFD54F" /> <!-- Kuning cerah -->
+        </shape>
+    </item>
+    <!-- Warna default -->
+    <item>
+        <shape>
+            <solid android:color="#FE7D11" /> <!-- Oranye -->
+        </shape>
+    </item>
+</selector>

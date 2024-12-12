@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="250dp"
+    android:viewportWidth="360"
+    android:viewportHeight="170">
+
+    <!-- Warna latar belakang oranye pada bagian atas -->
+    <path
+        android:fillColor="#FE7D11"
+        android:pathData="M0,0 h360 v95 Q190,180 0,135 z" />
+</vector>

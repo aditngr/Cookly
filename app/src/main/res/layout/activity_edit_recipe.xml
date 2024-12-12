@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Konten Utama -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/add_photo"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_frame"
+            android:clipToOutline="true"
+            android:outlineProvider="background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Hidangan"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
+
+        <!-- Input Porsi -->
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Mie Goreng Godog"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan Bahan"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
+
+        <!-- Input Bahan Bahan -->
+        <EditText
+            android:id="@+id/edtBahan"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_height="wrap_content"
+            android:hint="Mie"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langkah Langkah"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
+
+        <!-- Input Langkah Langkah -->
+        <EditText
+            android:id="@+id/edtLangkah"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_height="wrap_content"
+            android:hint="Rebus mie terlebih dahulu"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:layout_marginTop="3dp"/>
+
+        <!-- Button Upload -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/orange"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_button"/>
+    </LinearLayout>
+
+    <!-- Navbar -->
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FE7D11"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Tombol Home -->
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Tombol Tambah -->
+        <LinearLayout
+            android:id="@+id/nav_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tambah" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Resep"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Tombol Profil -->
+        <LinearLayout
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/profile_navbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
